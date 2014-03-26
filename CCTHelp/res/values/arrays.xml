@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="paracas_auto">
+	     <item >Paracaidas porosidad cero</item>
+	     <item >Paracaidas porosidad normal</item>
+	     <item >Paracaidas cargas acompañamiento</item>
+	</array>
+    <array name="paracas_manual">
+        <item>MT1-X</item>
+        <item>TPM-PLUS</item>
+        <item>JANUS</item>
+        <item>G9</item>
+        <item>NONE</item>
+    </array>
+    <array name="Zonas">
+        <item>Ninguna</item>
+        <item>Fuentes</item>
+        <item>Charlie</item>
+        <item>Santiago</item>
+        <item>Gonzalo I</item>
+        <item>Gonzalo II</item>
+        <item>Canas</item>
+        <item>Escuela</item>
+    </array>
+</resources>

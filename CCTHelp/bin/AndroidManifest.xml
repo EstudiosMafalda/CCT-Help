@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.ea.mde.ablamed.ccthelp"
+    android:versionCode="2"
+    android:versionName="0.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="es.ea.mde.ablamed.ccthelp.SplashScreen"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         <activity
+            android:name="es.ea.mde.ablamed.ccthelp.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        
+         <activity
+            android:name="es.ea.mde.ablamed.ccthelp.preferencias.PreferenceMain"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="es.ea.mde.ablamed.ccthelp.SubmenuCalculosSondeo"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="es.ea.mde.ablamed.ccthelp.SubmenuCalculosManual"
+            android:label="@string/app_name" >
+        </activity>
+        
+        <activity
+            android:name="es.ea.mde.ablamed.ccthelp.sondeo.automatico.CalculosAutomatico"
+            android:label="@string/calc_aut_app_title" >
+        </activity>
+        
+        <activity
+            android:name="es.ea.mde.ablamed.ccthelp.sondeo.manual.haho.CalculosManualHaho"
+            android:label="@string/calc_man_app_title" >
+        </activity>
+        
+    </application>
+
+</manifest>

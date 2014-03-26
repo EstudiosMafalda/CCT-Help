@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:title="SplashScreen">
+    <SwitchPreference 
+        android:key="splash_activation"
+        android:title="Splash Screen"
+        android:defaultValue="true"
+        android:summary="Activar o desactivar la pantalla de inicio"/>
+    
+     <PreferenceCategory 
+         android:title="Alturas de apertura">
+        <EditTextPreference 
+            android:key="altura_automatico"
+            android:title="Altura de apertura en automático"
+            android:summary="Selección por defecto de la altura de apertura en lanzamientos de apertura automática"/>
+        
+        <EditTextPreference 
+            android:key="altura_manual"
+            android:title="Altura de apertura en manual"
+            android:summary="Selección por defecto de la altura de apetura en lanzamintos de apertura manual"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Paracaidas"
+        >
+        <ListPreference 
+            android:key="static_line_canopy"
+            android:title="Paracaidas Automático"
+            android:icon="@drawable/ic_launcher"
+            android:summary="Selección por defecto del paracaidas de apertura automática"
+            android:entries="@array/paracas_auto"
+            android:entryValues="@array/paracas_auto"/>
+        
+        <ListPreference 
+            android:key="free_fall_canopy"
+            android:title="Paracaidas Manual"
+            android:summary="Selección por defecto del paracaidas de apertura manual"
+            android:entries="@array/paracas_manual"
+            android:entryValues="@array/paracas_manual"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Modo de funcionamiento">
+        <SwitchPreference 
+            android:key="modo_dia_noche"
+            android:title="Modo"
+            android:switchTextOn="Día"
+            android:switchTextOff="Noche"
+            android:summary="El modo noche está pensado para ser menos detectable"/>
+    </PreferenceCategory>
+    <PreferenceCategory 
+        android:title="Rutas a datos">
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>
