@@ -21,8 +21,8 @@
     <string name="calc_halo_haho_submenu_man">Cáculos HALO-HAHO</string>
     
 	<!-- calculos_automatico -->
-	<string name="calc_aut_app_title">Lanzamiento Automático</string>
-	<string name="carp_title">CARP: Cálculo punto suelta</string>
+	<string name="calc_aut_app_title">CARP</string>
+	<string name="carp_title">CARP</string>
 	<string name="introduce_datos">Introduce los datos solicitados</string>
 	<string name="altura">Altura</string>
 	<string name="azimut">Azimut</string>

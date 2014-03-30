@@ -5,9 +5,12 @@ import es.ea.mde.ablamed.ccthelp.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridLayout;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class CalculosAutomatico extends Activity {
@@ -19,7 +22,7 @@ public class CalculosAutomatico extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.calculos_automatico);
+		setContentView(R.layout.copy_calculos_automatico);
 		
 		Button btnCalcular = (Button)findViewById(R.id.btnCalcular);
 		btnCalcular.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +45,23 @@ public class CalculosAutomatico extends Activity {
 				rumbo.setText(etAzimut.getText().toString() + "º");
 				
 				lt.setVisibility(View.VISIBLE);
+				
+			}
+		});
+		
+		Spinner spDZ = (Spinner)findViewById(R.id.spzonalanzamiento);
+		spDZ.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+			@Override
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				if (arg2>0) findViewById(R.id.griddz).setVisibility(View.VISIBLE);
+				else findViewById(R.id.griddz).setVisibility(View.GONE);
+			}
+
+			@Override
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
 				
 			}
 		});

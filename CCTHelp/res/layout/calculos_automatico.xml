@@ -52,6 +52,7 @@
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
 		    android:layout_below="@id/tvaltura"
+		    android:layout_centerInParent="false"
 		    android:gravity="center_vertical|center_horizontal"
 		    android:inputType="number"
 		    android:maxWidth="100dp"
@@ -98,8 +99,8 @@
 		    android:layout_toRightOf="@id/etazimut"
 		    android:gravity="center_vertical|center_horizontal"
 		    android:inputType="number"
-		    android:maxWidth="50dp"
-		    android:minWidth="50dp"
+		    android:maxWidth="70dp"
+		    android:minWidth="70dp"
 		    android:singleLine="true"
 		    android:text="46" />
 	    

@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="paracas_auto">
-	     <item >Paracaidas porosidad cero</item>
-	     <item >Paracaidas porosidad normal</item>
-	     <item >Paracaidas cargas acompañamiento</item>
+	     <item >Porosidad cero</item>
+	     <item >Porosidad normal</item>
+	     <item >Cargas acompañamiento</item>
 	</array>
+	<integer-array name="paracas_auto_value">
+	     <item >0</item>
+	     <item >1</item>
+	     <item >2</item>
+	</integer-array>
     <array name="paracas_manual">
         <item>MT1-X</item>
         <item>TPM-PLUS</item>
@@ -12,6 +17,13 @@
         <item>G9</item>
         <item>NONE</item>
     </array>
+    <integer-array name="paracas_manual_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
     <array name="Zonas">
         <item>Ninguna</item>
         <item>Fuentes</item>
@@ -22,4 +34,14 @@
         <item>Canas</item>
         <item>Escuela</item>
     </array>
+    <integer-array name="Zonas_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </integer-array>
 </resources>

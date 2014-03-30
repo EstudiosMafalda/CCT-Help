@@ -88,7 +88,6 @@ public class VientoMedio{
 	
 	public double Manual (int elevacion, int vel_asc){
 		double v = ((vel_asc)==VEL_ASC_GLOBO_200?VEL_ASC_GLOBO_200:VEL_ASC_GLOBO_100) / Math.tan(Math.toRadians(elevacion));
-		v = v / 60;
-		return  v * MTS_TO_KTS;
+		return  v * MTS_TO_KTS / 60;
 	}
 }

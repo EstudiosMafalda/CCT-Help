@@ -36,8 +36,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
 			break;
 
 		case R.id.btnmainmenu3:
-			//i= new Intent (this, CalculosManualHaho.class);
-			//startActivity(i);
+			i= new Intent (this, SondeoReal.class);
+			startActivity(i);
 			break;
 			
 		case R.id.btnmainmenu4:
