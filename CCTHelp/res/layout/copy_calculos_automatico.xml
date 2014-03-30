@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginRight="5dp"
+	    android:orientation="vertical" >
+	    
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:gravity="center_horizontal"
+		        android:text="@string/carp_title"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <TextView
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="-3dp"
+		        android:gravity="center_horizontal"
+		        android:text="@string/introduce_datos"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:textColor="#777777"/>
+		
+		    <View
+		        android:layout_width="fill_parent"
+		        android:layout_marginLeft="5dp"
+		        android:layout_marginRight="5dp"
+		        android:layout_height="3dp"
+		        android:background="@drawable/linea" >
+
+		    </View>
+		
+		</LinearLayout>
+
+	    <TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="3dp"
+		    android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:text="Sondeo:"
+		    android:textColor="#3030ee" />
+	    	    
+	    <LinearLayout
+	        android:id="@+id/titulos"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp">
+
+	        <TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:width="70dp"
+			    android:gravity="center_horizontal"
+			    android:layout_weight="1"
+			    android:text="@string/altura"
+			    android:textColor="#3030ee" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:width="70dp"
+			    android:gravity="center_horizontal"
+			    android:text="@string/azimut"
+			    android:textColor="#3030ee" />
+	
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:width="70dp"
+			    android:gravity="center_horizontal"
+			    android:text="@string/elevacion"
+			    android:textColor="#3030ee" />
+	        
+	    </LinearLayout>
+				
+		<LinearLayout
+		    android:id="@+id/valores"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+
+		    <EditText android:id="@+id/etaltura" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="-3dp"
+		        android:layout_weight="1" 
+		        android:gravity="center_vertical|center_horizontal" 
+		        android:inputType="number"
+		        android:width="70dp" 
+		        android:singleLine="true" 
+		        android:text="1200" />
+		    
+		    <EditText android:id="@+id/etazimut" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="-3dp"
+		        android:layout_weight="1"
+		        android:gravity="center_vertical|center_horizontal" 
+		        android:inputType="number" 
+		        android:width="70dp"  
+		        android:singleLine="true" 
+		        android:text="235" />
+		    <EditText android:id="@+id/etelevacion" 
+		        android:layout_width="wrap_content" 
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="-3dp"
+		        android:layout_weight="1"
+		        android:gravity="center_vertical|center_horizontal" 
+		        android:inputType="number" 
+		        android:width="70dp" 
+		        android:singleLine="true" 
+		        android:text="46" />
+		</LinearLayout>
+	
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="10dp">
+		    
+		<TextView
+		    android:id="@+id/tvparacaidas"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		     android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:text="Paracaidas:"
+		    android:textColor="#3030ee" />
+	
+		<Spinner 
+		    android:id="@+id/spparacaidas"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/tvparacaidas"
+		    android:layout_marginBottom="10dp"
+		    android:contentDescription="Tipo de paracaidas"
+		    android:entries="@array/paracas_auto"/>
+		
+		<EditText 
+		    android:id="@+id/tvConstanteK"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@id/spparacaidas"
+		    android:layout_alignParentRight="true"
+		    android:text="30"/>
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_alignLeft="@id/tvConstanteK"
+		     android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:text="K:"
+		    android:textColor="#3030ee" />
+		
+		</RelativeLayout>
+		
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+
+		    <TextView
+		        android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			     android:textAppearance="?android:attr/textAppearanceMedium"
+			    android:text="Consideraciones del lanzamiento:"
+			    android:textColor="#3030ee" />
+		    
+		    <RadioGroup
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_gravity="center_horizontal"
+		        android:orientation="horizontal">
+		        
+		        <RadioButton 
+		            android:id="@+id/normal"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Eje Normal"/>
+		        
+		        <RadioButton 
+		            android:id="@+id/inverso"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Eje Inverso"/>
+		        
+		    </RadioGroup>
+		    
+		</LinearLayout>
+		
+		<RelativeLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:background="@drawable/fondocuadro9p">
+		
+			<TextView
+			    android:id="@+id/tvZona"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true"
+			    android:text="Zona de lanzamiento:"
+			    android:textColor="#3030ee"
+			    android:textAppearance="?android:attr/textAppearanceMedium" />
+			
+			<Spinner 
+			    android:id="@+id/spzonalanzamiento"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/tvZona"
+			    android:layout_marginBottom="10dp"
+			    android:entries="@array/Zonas"/>
+			
+			<Button 
+			    android:id="@+id/btnGps"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignBaseline="@id/spzonalanzamiento"
+			    android:layout_alignParentRight="true"
+			    android:drawableLeft="@android:drawable/btn_star"/>
+			
+		
+			<GridLayout
+			    android:id="@+id/griddz"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/spzonalanzamiento"
+			    android:layout_marginLeft="50dp"
+			    android:rowCount="2"
+			    android:columnCount="2"
+			    android:visibility="gone">
+			
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Latitud"
+		            android:textColor="#3030ee" />
+	
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Longitud"
+		            android:textColor="#3030ee" />
+	
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="37º 20&apos; 17&apos;&apos; N"
+		            android:layout_marginRight="10dp" />
+	
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="001º 03&apos; 46&apos;&apos; W" />
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dp"
+		            android:text="Elevación:"
+		            android:textColor="#3030ee"
+		            android:layout_columnSpan="2"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="247 ft"
+		            android:layout_columnSpan="2"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_marginTop="5dp"
+		            android:text="Eje de pasada:"
+		            android:layout_columnSpan="2"/>
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="070º"
+		            android:layout_columnSpan="2"/>
+			</GridLayout>
+			
+		</RelativeLayout>
+			
+			<Button
+			    android:id="@+id/btnCalcular"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="right"
+			    android:layout_marginBottom="10dp"
+			    android:layout_marginTop="10dp"
+			    android:background="@drawable/buttonlayoutselector"
+			    android:gravity="center_vertical|center_horizontal"
+			    android:paddingLeft="20dp"
+			    android:paddingRight="20dp"
+			    android:text="@string/btn_calcular" />
+	
+			<View
+			    android:id="@+id/linea1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="3dp"
+			    android:background="@drawable/linea" >
+
+		    </View>
+	
+		    
+		    <LinearLayout
+		        android:id="@+id/linear2"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:orientation="vertical"
+		        android:visibility="gone" >
+			
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/dist_carp"
+		            android:textColor="#3030ee" />
+	
+		        <TextView
+		            android:id="@+id/tvDistancia"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+		        <TextView
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="@string/rumbo"
+		            android:textColor="#3030ee" />
+	
+		        <TextView
+		            android:id="@+id/tvRumbo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textAppearance="?android:attr/textAppearanceMedium" />
+		        
+		    </LinearLayout>
+	
+	</LinearLayout>
+</ScrollView>

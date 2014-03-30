@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_weight="4"
+    android:background="@drawable/fondocuadro9p" >
+
+    <LinearLayout
+	        android:id="@+id/titulos_row"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="0dp">
+
+	        <TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="center_horizontal"
+			    android:layout_weight="1"
+			    android:text="@string/altura"
+			    android:textColor="#3030ee" />
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:gravity="center_horizontal"
+			    android:text="@string/azimut"
+			    android:textColor="#3030ee" />
+	
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:gravity="center_horizontal"
+			    android:text="@string/elevacion"
+			    android:textColor="#3030ee" />
+	        
+	    </LinearLayout>
+				
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content">
+
+		    <EditText android:id="@+id/etaltura" 
+		        android:layout_width="match_parent" 
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1" 
+		        android:gravity="center_horizontal"
+		        android:layout_marginTop="-5dp" 
+		        android:inputType="number"
+		        android:singleLine="true" 
+		        android:text="1200" />
+
+		    <EditText
+		        android:id="@+id/etazimut"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal"
+		        android:layout_marginTop="-5dp"
+		        android:inputType="number"
+		        android:singleLine="true"
+		        android:text="235" />
+
+
+		    <EditText android:id="@+id/etelevacion" 
+		        android:layout_width="match_parent" 
+		        android:layout_height="wrap_content"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal"
+		        android:layout_marginTop="-5dp" 
+		        android:inputType="number" 
+		        android:singleLine="true" 
+		        android:text="46" />
+		</LinearLayout>
+
+</LinearLayout>
+
+<ImageButton android:layout_width="20dp"
+    android:layout_height="40dp"
+    android:layout_marginRight="10dp"
+    android:layout_weight="1"
+    android:layout_gravity="center_vertical"
+    android:background="@android:drawable/ic_input_add"
+    android:onClick="AddRowClick"/>
+
+</LinearLayout>
