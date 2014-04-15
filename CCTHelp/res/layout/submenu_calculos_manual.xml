@@ -12,7 +12,7 @@
 
     <Button
         android:id="@+id/btnsbmcalcman1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_halo_submenu_man"
         android:height="50dp"
@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/btnsbmcalcman2"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_haho_submenu_man" 
         android:height="50dp"
@@ -30,7 +30,7 @@
 
     <Button
         android:id="@+id/btnsbmcalcman3"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_halo_haho_submenu_man"
         android:height="50dp"

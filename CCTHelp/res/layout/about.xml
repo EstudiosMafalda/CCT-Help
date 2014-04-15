@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_image"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="España@2014"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:paddingLeft="10dp" android:textColor="#3030ee"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor: Comandante Alberto Blanco"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:paddingLeft="10dp" android:textColor="#3030ee"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desarrollada como apoyo a los CCT del Ejercito del Aire, pero puesta a disposición de cualquier unidad a la que le sea de utilidad."
+        android:textAppearance="?android:attr/textAppearanceSmall" android:padding="5dp"/>
+
+</LinearLayout>

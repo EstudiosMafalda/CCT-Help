@@ -19,7 +19,7 @@
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
 		        android:gravity="center_horizontal"
-		        android:text="@string/carp_title"
+		        android:text="@string/harp_title"
 		        android:textAppearance="?android:attr/textAppearanceLarge" />
 		
 		    <TextView
@@ -142,7 +142,7 @@
 		    android:layout_below="@id/tvparacaidas"
 		    android:layout_marginBottom="10dp"
 		    android:contentDescription="Tipo de paracaidas"
-		    android:entries="@array/paracas_auto"/>
+		    android:entries="@array/paracas_manual"/>
 		
 		<EditText 
 		    android:id="@+id/tvConstanteK"
@@ -152,6 +152,14 @@
 		    android:layout_alignParentRight="true"
 		    android:text="30"/>
 		
+		<EditText 
+		    android:id="@+id/tvConstanteC"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignBaseline="@id/spparacaidas"
+		    android:layout_toLeftOf="@id/tvConstanteK"
+		    android:text="10"/>
+		
 		<TextView
 		    android:layout_width="wrap_content"
 		    android:layout_height="wrap_content"
@@ -159,6 +167,15 @@
 		    android:layout_alignLeft="@id/tvConstanteK"
 		     android:textAppearance="?android:attr/textAppearanceMedium"
 		    android:text="K:"
+		    android:textColor="#3030ee" />
+		
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentTop="true"
+		    android:layout_alignLeft="@id/tvConstanteC"
+		     android:textAppearance="?android:attr/textAppearanceMedium"
+		    android:text="C:"
 		    android:textColor="#3030ee" />
 		
 		</RelativeLayout>
@@ -175,25 +192,86 @@
 			    android:text="Consideraciones del lanzamiento:"
 			    android:textColor="#3030ee" />
 		    
-		    <RadioGroup
+		    <Spinner 
+		    android:id="@+id/spconsideraciones"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_marginBottom="10dp"
+		    android:contentDescription="Consideraciones sobre el lanzamiento"
+		    android:entries="@array/free_fall_considerations"/>
+		    
+		    <LinearLayout 
+		        android:id="@+id/layoutEjeDeterminado"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:visibility="gone">
+		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="Eje:"/>
+		        
+		        <EditText 
+		            android:id="@+id/ejeDeterminado"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:hint="000º"/>
+		        
+		    </LinearLayout>
+		    
+		    <RelativeLayout 
+		        android:id="@+id/layoutRuta"
 		        android:layout_width="match_parent"
 		        android:layout_height="wrap_content"
-		        android:layout_gravity="center_horizontal"
-		        android:orientation="horizontal">
+		        android:visibility="gone">
 		        
-		        <RadioButton 
-		            android:id="@+id/normal"
+		        <TextView 
+		            android:id="@+id/tvLat"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
-		            android:text="Eje Normal"/>
+		            android:layout_alignParentTop="true"
+		            android:text="Latitud:"/>
 		        
-		        <RadioButton 
-		            android:id="@+id/inverso"
+		        <EditText 
+		            android:id="@+id/etlatitud"
 		            android:layout_width="wrap_content"
 		            android:layout_height="wrap_content"
-		            android:text="Eje Inverso"/>
+		            android:layout_below="@id/tvLat"
+		            android:hint="00º 00' 00''"/>
 		        
-		    </RadioGroup>
+		        <EditText 
+		            android:id="@+id/etlongitud"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@id/etlatitud"
+		            android:layout_toRightOf="@id/etlatitud"
+		            android:hint="000º 00' 00''"/>
+		          
+		        <TextView 
+		            android:id="@+id/tvLon"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_alignLeft="@id/etlongitud"
+		            android:text="Longitud:"/>
+
+		        <EditText 
+		            android:id="@+id/etrumbo"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignBaseline="@id/etlatitud"
+		            android:layout_alignParentRight="true"
+		            android:hint="000º"/>
+		        		        
+		        <TextView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_alignParentTop="true"
+		            android:layout_alignLeft="@id/etrumbo"
+		            android:text="Rumbo:"/>
+		        
+		    </RelativeLayout>
 		    
 		</LinearLayout>
 		

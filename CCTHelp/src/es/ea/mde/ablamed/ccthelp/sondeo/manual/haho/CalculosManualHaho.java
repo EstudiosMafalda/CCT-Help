@@ -12,6 +12,7 @@ import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
@@ -24,17 +25,52 @@ public class CalculosManualHaho extends Activity{
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		setContentView(R.layout.calculos_manual_haho);
+		setContentView(R.layout.copy_calculos_manual_haho);
 		
 		Spinner spParacaidas = (Spinner)findViewById(R.id.spparacaidas);
 		spParacaidas.setOnItemSelectedListener(new OnItemSelectedListener() {
 
 			public void onItemSelected(AdapterView<?> arg0, View arg1,
 					int arg2, long arg3) {
-				LinearLayout lyCK = (LinearLayout)findViewById(R.id.ConstantesCyK);
+				/*LinearLayout lyCK = (LinearLayout)findViewById(R.id.ConstantesCyK);
 				if (arg2==4) lyCK.setVisibility(View.VISIBLE);
-				else if (arg2!=4) lyCK.setVisibility(View.INVISIBLE);
+				else if (arg2!=4) lyCK.setVisibility(View.INVISIBLE);*/
 				
+			}
+
+			public void onNothingSelected(AdapterView<?> arg0) {
+				// TODO Auto-generated method stub
+				
+			}
+		});
+		
+		Spinner spConsideraciones = (Spinner)findViewById(R.id.spconsideraciones);
+		spConsideraciones.setOnItemSelectedListener(new OnItemSelectedListener() {
+
+			public void onItemSelected(AdapterView<?> arg0, View arg1,
+					int arg2, long arg3) {
+				LinearLayout lyEjeDet = (LinearLayout)findViewById(R.id.layoutEjeDeterminado);
+				RelativeLayout lyRuta = (RelativeLayout)findViewById(R.id.layoutRuta);
+				
+				switch (arg2) {
+				case 0:
+					lyEjeDet.setVisibility(View.GONE);
+					lyRuta.setVisibility(View.GONE);
+					break;
+					
+				case 1:
+					lyEjeDet.setVisibility(View.VISIBLE);
+					lyRuta.setVisibility(View.GONE);
+					break;
+					
+				case 2:
+					lyEjeDet.setVisibility(View.GONE);
+					lyRuta.setVisibility(View.VISIBLE);
+					break;
+
+				default:
+					break;
+				}				
 			}
 
 			public void onNothingSelected(AdapterView<?> arg0) {
@@ -74,7 +110,7 @@ public class CalculosManualHaho extends Activity{
 					K = ConstantesParacaidas.K(paraca, altura);
 					break;
 				case Paracaidas.NONE:
-					System.out.println("Hemos llegado al punto de NONE");
+					//System.out.println("Hemos llegado al punto de NONE");
 					C = Double.parseDouble(etC.getText().toString());
 					K = Double.parseDouble(etK.getText().toString());
 				}

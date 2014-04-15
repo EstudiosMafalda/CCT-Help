@@ -21,23 +21,18 @@ public class MainActivity extends Activity implements View.OnClickListener{
 
 	public void onClick(View v) {
 		
-		Intent i;
-		
 		switch (v.getId()) {
 		
 		case R.id.btnmainmenu1:
-			i= new Intent (this, SubmenuCalculosSondeo.class);
-			startActivity(i);
+			startActivity(new Intent (this, SubmenuCalculosSondeo.class));
 			break;
 			
 		case R.id.btnmainmenu2:
-			i= new Intent (this, CalculosManualHaho.class);
-			startActivity(i);
+			startActivity(new Intent (this, CalculosManualHaho.class));
 			break;
 
 		case R.id.btnmainmenu3:
-			i= new Intent (this, SondeoReal.class);
-			startActivity(i);
+			startActivity(new Intent (this, SondeoReal.class));
 			break;
 			
 		case R.id.btnmainmenu4:
@@ -72,10 +67,12 @@ public class MainActivity extends Activity implements View.OnClickListener{
 		
 		switch (item.getItemId()) {
 		case R.id.action_settings:
-			Intent i = new Intent(this, PreferenceMain.class);
-			startActivity(i);
+			startActivity(new Intent(this, PreferenceMain.class));
 			break;
 
+		case R.id.action_about:
+			startActivity(new Intent (this, About.class));
+			break;
 		default:
 			break;
 		}

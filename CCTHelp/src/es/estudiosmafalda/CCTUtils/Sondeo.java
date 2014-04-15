@@ -13,7 +13,7 @@ public class Sondeo {
 	}
 	
 	public double SondeoManual (int altura, int elevacion, double c, double k){
-		System.out.println ("Viento medio APM: " + viento.Manual(elevacion, VientoMedio.VEL_ASC_GLOBO_200));
+		//System.out.println ("Viento medio APM: " + viento.Manual(elevacion, VientoMedio.VEL_ASC_GLOBO_200));
 		return (((float)altura/1000) * (viento.Manual(elevacion, VientoMedio.VEL_ASC_GLOBO_200) + c)) / k;
 	}
 	

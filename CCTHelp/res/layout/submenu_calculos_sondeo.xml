@@ -12,7 +12,7 @@
 
     <Button
         android:id="@+id/btnsbmsondeo1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_auto_submenu_sondeo"
         android:height="50dp"
@@ -21,7 +21,7 @@
 
     <Button
         android:id="@+id/btnsbmsondeo2"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_man_submenu_sondeo" 
         android:height="50dp"
@@ -30,7 +30,7 @@
 
     <Button
         android:id="@+id/btnsbmsondeo3"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_carg_submenu_sondeo"
         android:height="50dp"

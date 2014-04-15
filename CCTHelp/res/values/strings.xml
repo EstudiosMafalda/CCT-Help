@@ -3,6 +3,7 @@
     <!-- activity_main /-->
     <string name="app_name">CCT Help</string>
     <string name="action_settings">Settings</string>
+    <string name="action_about">Info App</string>
     <string name="calc_release_point">Cálculos del punto de suelta</string>
     <string name="dz_main_menu">Zonas de Lanzamiento (DZ)</string>
 	<string name="lz_main_menu">Zonas de Aterrizaje (LZ)</string>
@@ -21,8 +22,8 @@
     <string name="calc_halo_haho_submenu_man">Cáculos HALO-HAHO</string>
     
 	<!-- calculos_automatico -->
-	<string name="calc_aut_app_title">CARP</string>
 	<string name="carp_title">CARP</string>
+	<string name="calc_aut_app_title">Lanzamiento Automático</string>
 	<string name="introduce_datos">Introduce los datos solicitados</string>
 	<string name="altura">Altura</string>
 	<string name="azimut">Azimut</string>
@@ -32,11 +33,9 @@
     <string name="rumbo">Rumbo:</string>
     
     <!-- calculos_manual_haho -->
-    <string name="harp_title">HARP: Cálculo punto suelta</string>
+    <string name="harp_title">HARP</string>
     <string name="calc_man_app_title">Lanzamiento Manual</string>
     <string name="ConstanteC">C</string>
     <string name="ConstanteK">K</string>
     
-    
-   
 </resources>

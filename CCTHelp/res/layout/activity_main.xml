@@ -11,7 +11,7 @@
 
     <Button
         android:id="@+id/btnmainmenu1"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/calc_release_point"
         android:height="50dp"
@@ -20,7 +20,7 @@
 
     <Button
         android:id="@+id/btnmainmenu2"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/dz_main_menu" 
         android:height="50dp"
@@ -29,7 +29,7 @@
 
     <Button
         android:id="@+id/btnmainmenu3"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lz_main_menu"
         android:height="50dp"
@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/btnmainmenu4"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/check_list_main_menu" 
         android:height="50dp"
@@ -47,7 +47,7 @@
 
     <Button
         android:id="@+id/btnmainmenu5"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/herramientas_main_menu"
         android:height="50dp"
@@ -56,7 +56,7 @@
 
     <Button
         android:id="@+id/btnmainmenu6"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/manuales_main_menu"
         android:height="50dp"
